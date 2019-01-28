@@ -17,6 +17,12 @@ body a:hover
     text-decoration: underline;
 }
 
+td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
 .main_container
 {
 

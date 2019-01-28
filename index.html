@@ -1,128 +1,145 @@
 <html>
+
 <head>
   <title>BINBIN XU - Imperial College London</title>
 
   <script src="//use.edgefonts.net/open-sans:n3,i3,n4,i4,n6,i6,n7,i7,n8,i8.js"></script>
   <script src="//use.edgefonts.net/open-sans-condensed:n3,i3,n7.js"></script>
   <script src="//use.edgefonts.net/league-gothic:n4.js"></script>
-    
+
   <link rel="stylesheet" type="text/css" href="css/main.css">
-	
-	<script LANGUAGE="JavaScript">
 
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
+  <script LANGUAGE="JavaScript">
+    // Set up the image files to be used.
+    var theImages = new Array() // do not change this
+    // To add more image files, continue with the
+    // pattern below, adding to the array.
 
-<!-- Begin
-// Set up the image files to be used.
-var theImages = new Array() // do not change this
-// To add more image files, continue with the
-// pattern below, adding to the array.
+    theImages[0] = 'profile/binbin_photo.gif'
+    theImages[1] = 'profile/binbin_photo1.jpg'
+    theImages[2] = 'profile/binbin_photo2.jpg'
+    theImages[3] = 'profile/binbin_photo3.jpg'
+    theImages[4] = 'profile/binbin_photo4.jpeg'
 
-theImages[0] = 'profile/binbin_photo.gif'
-theImages[1] = 'profile/binbin_photo1.jpg'
-theImages[2] = 'profile/binbin_photo2.jpg'
-theImages[3] = 'profile/binbin_photo3.jpg'
-theImages[4] = 'profile/binbin_photo4.jpeg'
+    // do not edit anything below this line
 
-// do not edit anything below this line
-
-var j = 0
-var p = theImages.length;
-var preBuffer = new Array()
-for (i = 0; i < p; i++){
-   preBuffer[i] = new Image()
-   preBuffer[i].src = theImages[i]
-}
-var whichImage = Math.floor(Math.random()*(p));
-function showImage(){
-document.write('<img style="float:right; border: #404040 1px solid;" alt="Binbin photo" height = "225" src="'+theImages[whichImage]+'"');
-}
+    var j = 0
+    var p = theImages.length;
+    var preBuffer = new Array()
+    for (i = 0; i < p; i++) {
+      preBuffer[i] = new Image()
+      preBuffer[i].src = theImages[i]
+    }
+    var whichImage = Math.floor(Math.random() * (p));
+    function showImage() {
+      document.write('<img style="float:right; border: #404040 1px solid;" alt="Binbin photo" height = "225" src="' + theImages[whichImage] + '"');
+    }
 
 //  End -->
-</script>
-	
+  </script>
+
 </head>
 
 <body>
 
-<div class="main_container">
-<div class="content_container">
+  <div class="main_container">
+    <div class="content_container">
 
-  <div style="padding-top: 5px">
-	  <script type="text/javascript" language="JavaScript">
-		  showImage();
-			</script>
-	    <img style="float:right; border: #404040 1px solid;" src="profile/binbin_photo.gif" height="225" alt="Binbin photo" />
+      <div style="padding-top: 5px">
+        <script type="text/javascript" language="JavaScript">
+          showImage();
+        </script>
+        <img style="float:right; border: #404040 1px solid;" src="profile/binbin_photo.gif" height="225" alt="Binbin photo" />
 
-	  
-  <div class="title_text">
-  <div>BINBIN XU</div>
-  </div>
-  <div class="minor_text" style="padding-top: 10px;">
-  <div>PhD Student</div>
-	  <div>Department of Computing</div>
-  <div>Imperial College London</div>	
-  <div><img src="images/binbin_ic_mail.jpeg" width="232" height="31" style="padding: 5px 0px 2px 0px;" alt="Contact Info" /></div>
-  </div>
-	  <div style="padding-top: 10px;"> <a href="data/Binbin_Xu__IC__Curriculum_Vitae_.pdf">CV</a> / <a href="https://scholar.google.co.jp/citations?user=874PofoAAAAJ&hl=en">Google Scholar</a> / <a href="https://www.linkedin.com/in/binbinxu91/">LinkedIn</a> / Blog </div>
-  </div>
 
-  
-<div style="clear:both;"></div>
+        <div class="title_text">
+          <div>BINBIN XU</div>
+        </div>
+        <div class="minor_text" style="padding-top: 10px;">
+          <div>PhD Student</div>
+          <div>Department of Computing</div>
+          <div>Imperial College London</div>
+          <div><img src="images/binbin_ic_mail.jpeg" width="232" height="31" style="padding: 5px 0px 2px 0px;" alt="Contact Info" /></div>
+        </div>
+        <div style="padding-top: 10px;"> <a href="data/Binbin_Xu__IC__Curriculum_Vitae_.pdf">CV</a> / <a href="https://scholar.google.co.jp/citations?user=874PofoAAAAJ&hl=en">Google
+            Scholar</a> / <a href="https://www.linkedin.com/in/binbinxu91/">LinkedIn</a> / Blog </div>
+      </div>
 
-<div style="padding-top: 25px;" class="splash">
 
-<div style="padding: 5px 0px 5px 0px">
-	I am a PhD student at the Smart Robotics Lab, Imperial College London, working with <a href="http://wp.doc.ic.ac.uk/sleutene/">Dr. Stefan Leutenegger</a> and <a href="https://www.doc.ic.ac.uk/~ajd/">Prof. Andrew Davison</a>. 
-	</div>
+      <div style="clear:both;"></div>
 
-		<div style="padding: 10px 0px 0px 0px;">
+      <div style="padding-top: 25px;" class="splash">
 
-		My current research interest is to achieve <span class="emphblack">an object-level SLAM system working in a dynamic environment</span>. I am also broadly interested in SLAM, robotics and computational photography. 
-</div>
-	
-	<div class="subtitle_text">Brief Bio</div>
+        <div style="padding: 5px 0px 5px 0px">
+          I am a PhD student at the Smart Robotics Lab, Imperial College London, working with <a href="http://wp.doc.ic.ac.uk/sleutene/">Dr.
+            Stefan Leutenegger</a> and <a href="https://www.doc.ic.ac.uk/~ajd/">Prof. Andrew Davison</a>.
+        </div>
 
-	<div style="padding: 20px 0px 0px 0px;">
-		Before starting my PhD at Imperial College London, I received my Master degree in Precision Engineering from the University of Tokyo in 2017, supervised by <a href="http://www.robot.t.u-tokyo.ac.jp/~yamashita/index.html">Assoc. Prof. Atsushi Yamashita</a>  and <a href="http://www.robot.t.u-tokyo.ac.jp/asamalab/Asama_page/top_a.html">Prof. Hajime Asama</a>. Before that, I got my Bachelor's degree in Information Engineering from South China University of Technology in 2014.
-</div>
-	
-			 
-<div class="subtitle_text">SELECTED <a href="https://scholar.google.co.jp/citations?user=874PofoAAAAJ&hl=en">PUBLICATIONS</a></div>
+        <div style="padding: 10px 0px 0px 0px;">
 
-<div style="padding-top: 20px;">
-	        <table width="100%" style="font-size:13pt;font-family:open-sans,sans-serif;" align="center" border="0" cellspacing="0" cellpadding="0">
-	<tr>
-            <td width="25%"><img src="pub/ral2017/ral-figure.png" width="97%" style="border-style: none"></td>
+          My current research interest is to achieve <span class="emphblack">an object-level SLAM system working in a
+            dynamic environment</span>. I am also broadly interested in SLAM, robotics and computational photography.
+        </div>
+
+        <div class="subtitle_text">Brief Bio</div>
+
+        <div style="padding: 20px 0px 0px 0px;">
+          Before starting my PhD at Imperial College London, I received my Master degree in Precision Engineering from
+          the University of Tokyo in 2017, supervised by <a href="http://www.robot.t.u-tokyo.ac.jp/~yamashita/index.html">Assoc.
+            Prof. Atsushi Yamashita</a> and <a href="http://www.robot.t.u-tokyo.ac.jp/asamalab/Asama_page/top_a.html">Prof.
+            Hajime Asama</a>. Before that, I got my Bachelor's degree in Information Engineering from South China
+          University of Technology in 2014.
+        </div>
+
+
+        <div class="subtitle_text">SELECTED <a href="https://scholar.google.co.jp/citations?user=874PofoAAAAJ&hl=en">PUBLICATIONS</a></div>
+
+        <div style="padding-top: 20px;">
+          <table width="100%" style="font-size:13pt;font-family:open-sans,sans-serif;" align="center" border="0"
+            cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="25%"><img src="pub/icra2019/mid_fusion.jpg" width="97%" style="border-style: none"></td>
+              <td width="100%" valign="top"> <b>MID-Fusion: Octree-based Object-Level Multi-Instance Dynamic SLAM</b>
+                <br>
+                <b>Binbin Xu</b>, Wenbin Li, Dimos Tzoumanikas, Michael Bloesch, Andrew Davison, Stefan Leutenegger
+                <br>
+                <em>IEEE International Conference on Robotics and Automation (ICRA) </em>, 2019 <br>
+                <a href="">paper</a> / <a href="">video</a></td>
+            </tr>
+
+            <tr>
+              <td width="25%"><img src="pub/ral2017/ral-figure.png" width="97%" style="border-style: none"></td>
               <td width="100%" valign="top"> <b>Spatio-temporal Video Completion in Spherical Image Sequences</b>
-				  <br>
-                <b>Binbin Xu</b>, Sarthak Pathak, Hiromitsu Fujii, Atsushi Yamashita and Hajime Asama 
-				  <br>
-  <em>IEEE Robotics and Automation Letters (RA-L) </em>, 2017 <br>
-  <a href="http://dx.doi.org/10.1109/LRA.2017.2718106">paper</a> / <a href="https://youtu.be/Y2oOumF8S3Q">video</a></td>
-          </tr>
-				        </table>	
-</div>
+                <br>
+                <b>Binbin Xu</b>, Sarthak Pathak, Hiromitsu Fujii, Atsushi Yamashita and Hajime Asama
+                <br>
+                <em>IEEE Robotics and Automation Letters (RA-L) </em>, 2017 <br>
+                <a href="http://dx.doi.org/10.1109/LRA.2017.2718106">paper</a> / <a href="https://youtu.be/Y2oOumF8S3Q">video</a></td>
+            </tr>
+          </table>
+        </div>
 
-<div class="subtitle_text">HONORS</div>
-<ul>
-<li>Outstanding Master Thesis, <br> Department of Precision Engineering, The University of Tokyo, 2017</li>
-<li>JSME Fellow Award for Outstanding Young Engineers, <br> The Japan Society of Mechanical Engineers (JSME), 2016</li>
-<li>Honorable Mention Award, <br> 2015 JSME/RMD International Conference on Advanced Mechatronics, 2015</li>
-</ul>
+        <div class="subtitle_text">HONORS</div>
+        <ul>
+          <li>Outstanding Master Thesis, <br> Department of Precision Engineering, The University of Tokyo, 2017</li>
+          <li>JSME Fellow Award for Outstanding Young Engineers, <br> The Japan Society of Mechanical Engineers (JSME),
+            2016</li>
+          <li>Honorable Mention Award, <br> 2015 JSME/RMD International Conference on Advanced Mechatronics, 2015</li>
+        </ul>
 
 
-<div class="subtitle_text">Miscellaneous</div>
-<ul>
-<li>Living in China, Japan, and UK for many years, I am interested in exploring different cultures and currently fluent with Mandarin, English and Japanese.</li>
-<li>Outside of my research, I am also interested in photographing, travelling, and swimming. </li>
-			  </ul>
+        <div class="subtitle_text">Miscellaneous</div>
+        <ul>
+          <li>Living in China, Japan, and UK for many years, I am interested in exploring different cultures and
+            currently fluent with Mandarin, English and Japanese.</li>
+          <li>Outside of my research, I am also interested in photographing, travelling, and swimming. </li>
+        </ul>
 
-<div style="padding-top: 50px;">&nbsp;</div>
+        <div style="padding-top: 50px;">&nbsp;</div>
 
-</div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
