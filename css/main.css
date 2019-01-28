@@ -1,0 +1,106 @@
+body
+{   
+  font-family: open-sans, sans-serif;
+  font-size: 13pt;
+  color: #404040;
+}
+
+body a
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+body a:hover
+{
+    color: #808080;
+    text-decoration: underline;
+}
+
+.main_container
+{
+
+}
+
+.content_container
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.title_text
+{
+    font-family: league-gothic, sans-serif;
+    font-weight: 550;
+    font-size: 62pt;
+    text-indent: -3px;
+    line-height: 54pt;
+    color: #000000;
+}
+
+.subtitle_text
+{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-family: league-gothic, sans-serif;
+    font-weight: 600;
+    font-size: 36pt;
+    color: #000000;
+}
+
+ .minor_text
+{
+  font-family: open-sans, sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 16pt;
+}
+
+
+.emph
+{
+  color: #c02020;
+}
+
+.emphblack
+{
+  color: #000000;
+  font-weight: 700;
+}
+
+.splash
+{
+  line-height: 20pt;
+}
+
+.one 
+{
+ width: 300px;
+ height: 225px;
+ position: relative;
+	right: 0;
+}
+    
+.two
+{
+  width: 300px;
+  height: 225px;
+  position: absolute;
+	right: 0;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+    
+.fade 
+{
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight 
+{
+  background-color: #ffffd0;
+}
