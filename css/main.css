@@ -1,12 +1,13 @@
 body
 {   
   font-family: open-sans, sans-serif;
-  font-size: 13pt;
+  font-size: 14pt;
   color: #404040;
 }
 
 body a
 {
+    /* font-size: 14pt; */
     color: #000000;
     text-decoration: underline;
 }
@@ -18,8 +19,13 @@ body a:hover
 }
 
 td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* font-size: 14px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+td, th {
+  font-size: 14pt;
 }
 
 
@@ -30,7 +36,9 @@ td {
 
 .content_container
 {
-    width: 800px;
+    /* width: 800px; */
+    width:100%;
+    max-width:800px;
     margin-left: auto;
     margin-right: auto;   
 }
@@ -39,7 +47,7 @@ td {
 {
     font-family: league-gothic, sans-serif;
     font-weight: 550;
-    font-size: 56pt;
+    font-size: 56px;
     text-indent: -3px;
     line-height: 54pt;
     color: #000000;
@@ -51,7 +59,7 @@ td {
     padding-bottom: 10px;
     font-family: league-gothic, sans-serif;
     font-weight: 600;
-    font-size: 36pt;
+    font-size: 36px;
     color: #000000;
 }
 
@@ -73,7 +81,7 @@ td {
   font-family: open-sans, sans-serif;
   color: #000000;
   font-weight: 700;
-  /* font-size: 13.5pt; */
+  font-size: 14pt;
 }
 .emphblack
 {
