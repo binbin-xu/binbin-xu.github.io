@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    📝 BLOG INDEX PAGE
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    
+    To add new blog posts:
+    1. Create a new folder under blogs/ (e.g., blogs/2026/)
+    2. Add your markdown file (e.g., 2026.md)
+    3. Run: python tools/md-to-blog.py blogs/2026/2026.md
+    4. Add a new blog-card entry below
+    
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Binbin Xu</title>
+    <!-- Use main.css for variables if any, though we override most things here -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #fafafa;
+            --text-primary: #2c2c2c;
+            --text-secondary: #666666;
+            --accent-color: #5b6abf;
+            --card-bg: #ffffff;
+            --card-border: #f0f0f0;
+            --card-hover-border: #e5e5e5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px 40px;
+        }
+
+        /* --- Header --- */
+        .blog-header {
+            text-align: center;
+            margin-bottom: 70px;
+            position: relative;
+        }
+
+        .blog-header h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 15px 0;
+            letter-spacing: -0.02em;
+        }
+
+        .blog-header p {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: var(--text-secondary);
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        /* Decorative separator */
+        .blog-header::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: #ddd;
+            margin: 35px auto 0;
+            border-radius: 2px;
+        }
+
+        /* --- List & Cards --- */
+        .blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid var(--card-border);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            border-color: var(--card-hover-border);
+        }
+
+        .blog-card-meta {
+            font-size: 0.85rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            display: block;
+        }
+
+        .blog-card-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            line-height: 1.25;
+            transition: color 0.2s ease;
+        }
+        
+        /* .blog-card:hover .blog-card-title {
+             color: var(--accent-color); 
+        } */
+
+        .blog-card-excerpt {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.75;
+            margin-bottom: 25px;
+        }
+
+        .blog-card-read-more {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            transition: color 0.2s ease;
+        }
+        
+        .blog-card-read-more::after {
+            content: "→";
+            margin-left: 6px;
+            transition: transform 0.2s ease;
+            font-family: sans-serif; /* System font for arrow */
+        }
+
+        .blog-card:hover .blog-card-read-more {
+            color: #4052a0;
+        }
+
+        .blog-card:hover .blog-card-read-more::after {
+            transform: translateX(5px);
+        }
+
+        /* --- Footer / Back Link --- */
+        .back-link-container {
+            text-align: center;
+            margin-top: 70px;
+            padding-bottom: 40px;
+        }
+
+        .back-link {
+            font-size: 0.95rem;
+            color: #999;
+            transition: color 0.2s ease;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+            border-bottom-color: var(--text-primary);
+        }
+
+        /* --- Mobile --- */
+        @media (max-width: 768px) {
+            .blog-container {
+                padding-top: 50px;
+            }
+            .blog-header h1 {
+                font-size: 2.5rem;
+            }
+            .blog-card {
+                padding: 25px;
+                border-radius: 12px;
+            }
+            .blog-card-title {
+                font-size: 1.6rem;
+            }
+             .blog-card-excerpt {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <!-- <header class="blog-header">
+            <h1>Writings</h1>
+            <p>记录生活的碎片，留存岁月的档案</p>
+        </header> -->
+
+        <div class="blog-list">
+            <!-- Blog Post: 2025 Year in Review -->
+            <a href="blogs/2025/2025.html" class="blog-card">
+                <time class="blog-card-meta">January 2026</time>
+                <div class="blog-card-title">2025 Year in Review</div>
+                <div class="blog-card-excerpt">
+                    那个指向我博客的空白链接，整整一年都在网页的一角无声地闪烁，像是一种温和却持久的指控。在工业界度过的第二个年头，带给我一种与大学截然不同的时空错觉...
+                </div>
+                <span class="blog-card-read-more">Read Article</span>
+            </a>
+
+            <!-- Add more blog cards here as you write new posts -->
+        </div>
+
+        <div class="back-link-container">
+            <a href="index.html" class="back-link">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
