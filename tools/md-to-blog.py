@@ -188,8 +188,50 @@ def generate_blog_page(title: str, content_html: str, relative_path: str = "../.
             margin-bottom: 1.8em;
         }}
 
+        /* Image Styles */
+        img {{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            display: block;
+        }}
+
+        .image-caption {{
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: -15px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }}
+
+        .image-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }}
+
+        .image-grid.single {{
+            grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+            max-width: 380px;
+            margin-left: auto;
+            margin-right: auto;
+        }}
+
+        .image-grid img {{
+            margin: 0;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* Optional: distinct shadow for grid items */
+        }}
+
         /* Navigation */
         .nav-links {{
+
             display: flex;
             justify-content: space-between;
             margin-top: 80px;
@@ -220,6 +262,9 @@ def generate_blog_page(title: str, content_html: str, relative_path: str = "../.
             }}
             body {{
                 font-size: 17px;
+            }}
+            .image-grid {{
+                grid-template-columns: 1fr;
             }}
         }}
     </style>
