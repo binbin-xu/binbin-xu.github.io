@@ -124,8 +124,50 @@
             margin-bottom: 1.8em;
         }
 
+        /* Image Styles */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            display: block;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: -15px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .image-grid.single {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+            max-width: 380px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image-grid img {
+            margin: 0;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* Optional: distinct shadow for grid items */
+        }
+
         /* Navigation */
         .nav-links {
+
             display: flex;
             justify-content: space-between;
             margin-top: 80px;
@@ -157,6 +199,9 @@
             body {
                 font-size: 17px;
             }
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -169,6 +214,7 @@
 
         <article class="blog-post-content">
             <h1 id="2025">2025</h1>
+<p><img alt="2025 Year in Review" src="photos/toronto.jpeg" /></p>
 <p>那个指向我博客的空白链接，整整一年都在网页的一角无声地闪烁，像是一种温和却持久的指控。在工业界度过的第二个年头，带给我一种与大学截然不同的时空错觉：日子在一种高密度的忙碌中呼啸而过，所有的细节都被压缩成了模糊的背景板。当我们试图回溯这一年时，往往会陷入一种失语；但当我真正坐下来，试图用文字去抵抗遗忘时，那些生活的切片才开始显影。</p>
 <p>以下是对这一年的简单回顾，也是给年岁渐长的自己，留存的一份档案。</p>
 <h2 id="_1">工作</h2>
@@ -180,10 +226,28 @@
 <p>去年的骨折像是一次强制性的停机维护。在随后三四个月的休养中，我以一种近乎人类学的视角，非常有趣的观察到自己左腿因为运动受限，肌肉飞快流逝。在恢复期间，在理疗中重新学习走路。</p>
 <p>为了对抗这种物理上的衰退，我在这一年重新定义了自己与运动的关系。夏天的多伦多慷慨地提供了绝佳的复健场所。我的体能从零起步，小心翼翼地试探踝关节对冲击力的耐受度，直到重新将配速拉回到 5公里25分钟 的水平。在community center的羽毛球场上，虽然步伐已不如往昔犀利，但每一次挥拍和奔跑都伴随着一种重获自由的快感。在 Algonquin 省立公园的湖面上，以往每年和多大的朋友去backcountry，但是每次都无法控制好方向。今年看到makrham有canoe的暑假课程，赶紧报了个名补习一下，我终于不再是那个在后座随波逐流的乘客，得益于暑期的独木舟课程，我学会了如何控制船头，切开平静的水面。</p>
 <p>最显著的量化突破来自泳池。在 Lifesaving Club 的高强度特训下，我从那个只能勉强游完 25 米的初学者，进化到了可以连续进行 500米 自由泳而不间断。尽管这比起蛙泳仍显吃力，但那种全身肌肉协同运作的酸痛感，本身就是健康的证明。</p>
+<div class="image-grid">
+  <img src="photos/fitness/swimming.jpeg" alt="Swimming">
+  <img src="photos/fitness/running.jpeg" alt="Running">
+  <img src="photos/fitness/canoe.jpeg" alt="Canoeing">
+  <img src="photos/fitness/sailing.jpeg" alt="Sailing">
+</div>
+<div class="image-caption">Fitness journey: Swimming, Running, Canoeing, and Sailing</div>
+
 <p>总体来说，这一年来通过跑步锻炼与游泳，感觉身体状态有了明显提升。然而，生活的叙事从不遵循完美的线性上升。年末，右耳突发的高频听力下降（High-frequency hearing loss）打断了这一切。在激素治疗的副作用与运动中断的焦虑中，我被迫再次接受身体那脆弱而不可预测的本质。</p>
 <h2 id="hobbies">Hobbies</h2>
 <p>除了修复身体，我也试图修复对生活的热情。受 Anthony Bourdain 和《Chef's Table》的感召，我走进了 George Brown College 的专业厨房，开始了系统地学习西餐烹饪。在那里的 Culinary Arts I &amp; II 以及海鲜专项课程中，我学习的不仅仅是制作一道千层面（Lasagna）、蔬菜浓汤（Minestrone）、酿猪排或是腌制三文鱼，更是理解什么是 Mise en place，那种对食材处理、刀工以及烹饪流程的极致尊重。</p>
 <p>我甚至挑战了英国国菜炸鱼薯条（Fish and Chips），以及胡椒牛排和佛罗伦萨鸡。虽然偶尔会有失败的实验品，但每当那道菜肴精准地呈现于盘中时，那种掌控感是无可替代的。与之形成鲜明对比的是我在安大略湖上的帆船时光。工作地点虽在 Markham，但我将湖上的时间严格限定为“非竞争性”的。没有比赛的紧张，只有一种纯粹的、近乎躺平的漂浮，那是对忙碌职场生活的必要调剂。</p>
+<div class="image-grid">
+  <img src="photos/cooking/image.png" alt="Cooking experiment">
+  <img src="photos/cooking/0C821CF1-033E-4048-8B46-0B2F0ED232BD_1_105_c.jpeg" alt="Culinary creation">
+  <img src="photos/cooking/3379738B-9AE2-480B-A45C-7CF4997216BF_1_105_c.jpeg" alt="Cooking photo">
+  <img src="photos/cooking/DA92FC4C-96CB-47CD-9200-011CBE8B3CD3_1_105_c.jpeg" alt="Cooking photo">
+  <img src="photos/cooking/77EA7545-C6E7-4B86-AC60-8E80994FCEBC_1_105_c.jpeg" alt="Cooking photo">
+  <img src="photos/cooking/EAB4CB21-1466-4154-9CD0-CD2A94B2BABF_1_105_c.jpeg" alt="Cooking photo">
+</div>
+<div class="image-caption">Culinary experiments from the year</div>
+
 <h2 id="books">Books</h2>
 <p>由于去年骨折在家休养的时间比较多，重新捡起了我的kindle，加上今年新购入的彩色 Kobo，读了不少书。书非借不读，袁枚这句话还是很有道理的。</p>
 <p>自从发现Toronto Public Library的电子书借阅服务以后，读书量明显提升了不少。今年读的书大致可以分为以下几类：</p>
@@ -191,10 +255,20 @@
 <ul>
 <li>当我们旅行：lonely planet的故事：回国出差的时候在公司楼下图书馆发现了这本书。在同事午休的时候意犹未尽的读完了这本书。这本书的写作其实并没有那么好，可能是因为翻译版的原因，叙述并没有那么流畅。但是作者（LP创始人）的故事够精彩，讲述了Lonely Planet从一个小众的背包客指南，成长为全球最大的旅游出版商的故事。书中不仅有丰富的旅游见闻，还有对旅行文化和行业变迁的深刻洞察。作为一个多年的背包客，对作者的经历心驰神往，仿佛自己也随之踏上了那段旅程。</li>
 </ul>
+<div class="image-grid single">
+  <img src="photos/books/lonely-planet-story.jpg" alt="当我们旅行：Lonely Planet 的故事 书封">
+</div>
+<div class="image-caption">《当我们旅行：Lonely Planet 的故事》封面</div>
+
 <h3 id="_3">技术 / 工程</h3>
 <ul>
 <li>Software Engineering at Google：夏天的时候借阅了这本书，没想到冬天自己也要加入Google。对于书中各个章节的作者打磨更好的维护性的思考和行为佩服。最打动我的是它把“可持续开发”当作一项系统工程，而不是某个工具或流程。书里关于代码评审、测试、变更管理和工程文化的讨论，很容易对照自己的日常工作，并把“降低未来维护成本”当成写代码的默认目标。</li>
 </ul>
+<div class="image-grid single">
+  <img src="photos/books/software-engineering-at-google.jpg" alt="Software Engineering at Google cover">
+</div>
+<div class="image-caption">《Software Engineering at Google》封面</div>
+
 <h3 id="_4">宏观 / 投资理财</h3>
 <p>初衷是在加拿大呆久了，需要自己打理RRSP/TFSA中存放的钱，随着自己对投资理财的兴趣增加，今年也拓宽了不少这方面的书：</p>
 <ul>
@@ -211,6 +285,14 @@
 <p>The Intelligent Investor：这本书读起来更像一套训练：如何定义安全边际、如何区分投资与投机、如何和市场情绪保持距离。很多段落需要慢慢消化，不过结合每章的最新评论，可以更直接得把逻辑串起来。这本书不会给你短期答案，但会不断提醒你先把风险管理做好。</p>
 </li>
 </ul>
+<div class="image-grid">
+  <img src="photos/books/psychology-of-money.jpg" alt="The Psychology of Money cover">
+  <img src="photos/books/millionaire-teacher.jpg" alt="Millionaire Teacher cover">
+  <img src="photos/books/simple-path-to-wealth.jpg" alt="The Simple Path to Wealth cover">
+  <img src="photos/books/intelligent-investor.jpg" alt="The Intelligent Investor cover">
+</div>
+<div class="image-caption">今年读过的投资理财书封：性格、低成本与长期主义</div>
+
 <p>虽然读了这么多投资理财的书，但我觉得最重要的收获还是对于自己的性格定位有了更清晰的认知。既然自己是Defensive Investor，安于市场的average return，那么就应该把注意力放在降低成本、简化流程和坚持长期这几个方面，而不是试图通过频繁交易或市场时机来提升收益率。把生活中的时间，精力和注意力放在更重要的事情上，才是最划算的投资。</p>
 <h3 id="_5">地缘政治 / 科技产业</h3>
 <p>主要是跟随Financial Times的推荐，想要更系统地理解当下大国竞争和科技产业的变迁。</p>
@@ -228,6 +310,14 @@
 <p>Supremacy: AI, ChatGPT, and the Race That Will Change the World：这本书更像一部 AI 竞赛的纪实，把公司、实验室、资本和政策之间的拉扯写得很具体。作为AI的半从业者，大部分的故事都比较聊熟于心，主要从Sam Altman和Demis Hassabis这双主角出发，描述了这一波AI革命的发展。</p>
 </li>
 </ul>
+<div class="image-grid">
+  <img src="photos/books/holy-grail-macroeconomics.jpg" alt="The Holy Grail of Macroeconomics cover">
+  <img src="photos/books/chip-war.jpg" alt="Chip War cover">
+  <img src="photos/books/grand-chessboard.jpg" alt="The Grand Chessboard cover">
+  <img src="photos/books/supremacy-ai.jpg" alt="Supremacy: AI, ChatGPT, and the Race That Will Change the World cover">
+</div>
+<div class="image-caption">宏观与科技博弈书单封面</div>
+
 <h3 id="_6">厨艺 / 饮食</h3>
 <ul>
 <li>
@@ -243,6 +333,14 @@
 <p>Brain Food：它把营养学与认知健康联系起来，给了很多可操作的饮食建议（比如脂肪类型、Omega-3、蔬果与纤维）。虽然有些结论我会保持谨慎，但整体思路很适合作为“把吃饭当成长期投资”的提醒。读完后我在超市购买原材料的时候，会更有挑选性。</p>
 </li>
 </ul>
+<div class="image-grid">
+  <img src="photos/books/a-cooks-tour.jpg" alt="A Cook's Tour cover">
+  <img src="photos/books/kitchen-confidential.jpg" alt="Kitchen Confidential cover">
+  <img src="photos/books/bar-book.jpg" alt="The Bar Book: Elements of Cocktail Technique cover">
+  <img src="photos/books/brain-food.jpg" alt="Brain Food cover">
+</div>
+<div class="image-caption">关于饮食、厨房与鸡尾酒的书封</div>
+
 <h3 id="_7">小说</h3>
 <ul>
 <li>
@@ -252,11 +350,61 @@
 <p>The Moon and Sixpence：中英版各自读了一遍。后来又在纽约MET看了不少原型高更在塔希提岛上的画作。故事读起来有点残酷：一个人为了内心的月亮，可以把现实的六便士摔得粉碎。它既让人向往那种纯粹的创作冲动，也让人不得不思考这种选择对身边人的代价。读完后我更能理解充分和完全的自由也许有的时候并不浪漫，它往往伴随着孤独和尖锐的取舍。</p>
 </li>
 </ul>
+<div class="image-grid">
+  <img src="photos/books/animal-farm.jpg" alt="Animal Farm cover">
+  <img src="photos/books/moon-and-sixpence.jpg" alt="The Moon and Sixpence cover">
+</div>
+<div class="image-caption">两本重读的小说封面</div>
+
 <h2 id="travel">Travel</h2>
 <p>工作以来，由于工作的性质，假期时间比较有限。今年主要就去了趟美国旅游和回国出差了一趟。</p>
 <p>加拿大境内，则是因为开会，去了一趟一直以来最想去的Banff。5月底的banff感觉是最好的时候，住宿价格还处于淡季的价格，但是天气已经开始转暖，山上的积雪还没有完全融化，同时阳光又非常充足，可以充分感受到蓝天雪山的美丽。去lake louise徒步，感受落基山脉的壮丽风光。湖水的颜色非常梦幻，远处的雪山倒映在湖面上，感觉像是进入了一个童话世界。不远处风吹动导致的雪山崩塌声，又提醒着我大自然的力量是多么的不可预测。总的来说，这次banff之行让我感受到了大自然的壮丽和宁静，虽然因为时间有限，没有能深度参与一些户外活动，期待下次有机会再来这里，探索更多的自然美景。</p>
+<div class="image-grid">
+  <img src="photos/travel/banff/1E93B6AE-6DB8-496D-8887-7CE92631CCBB_1_102_o.jpeg" alt="Banff Lake Louise morning ridge">
+  <img src="photos/travel/banff/IMG_1764.jpeg" alt="Banff alpine lake midday">
+  <img src="photos/travel/banff/IMG_1786.jpeg" alt="Banff lakeside trail">
+  <img src="photos/travel/banff/IMG_1945.jpeg" alt="Banff snowy peak over lake">
+  <img src="photos/travel/banff/IMG_2425.jpeg" alt="Banff turquoise lake with snow peaks">
+  <img src="photos/travel/banff/IMG_2786.jpeg" alt="Banff late afternoon mountains">
+</div>
+<div class="image-caption">Banff late‑May：Lake Louise 与落基山脉的几张留影</div>
+
 <p>3月份的时候因为工作需要回国出差一趟。3月份北京的春天已经开始回暖，感受到了一些春天的气息。在北京的时候，抽空和爸妈去了国家博物馆，钟鼓楼和北海公园，感受到了中国传统文化的魅力，上一次去北京还是小学毕业和舅舅一家，北京与记忆中的样子有很大不同，城市变得更加现代化和国际化，不过一些历史文化景点依然保存完好，给人一种时空交错的感觉。另外，回国也让我有机会去体验了一下国内的工作强度和氛围，总体来说，强度比我想象中要好，午休文化还是非常有趣的，让我想到本科时候大家一起回宿舍睡午觉的日子。后来自己去日本的时候强行戒掉了午睡的习惯。</p>
+<div class="image-grid">
+  <img src="photos/travel/beijing/521F15FD-5DF6-4D61-8921-A38E97C1E8B4_1_102_o.jpeg" alt="Beijing National Museum exterior">
+  <img src="photos/travel/beijing/758ADE3D-58C0-4FF2-AA63-F8D0E1073D61_1_102_o.jpeg" alt="Beijing temple courtyard in spring">
+  <img src="photos/travel/beijing/B1A8CA68-6B6D-47F5-A5A3-3EC70F1BB4E2_1_105_c.jpeg" alt="Beijing hutong walk">
+  <img src="photos/travel/beijing/125CBF55-7C76-4974-862C-F5508CB81E36_1_102_o.jpeg" alt="Beijing bell or drum tower view">
+</div>
+<div class="image-caption">北京三月：国博、钟鼓楼与春日街巷</div>
+
 <p>今年地图上拓展的国家主要是美国，2月份去了次费城，圣诞节去了次纽约。总体来说，美国的城市还是比我预想中要好的（可能是因为过度阅读了简中上的一些抱怨），不过费城的大部分的地铁通道和一小部分纽约地铁通道里的气味非常难闻，这可能是唯一符合我预期的地方。费城比我预期比历史文化底蕴非常深厚得多，独立厅和自由钟让我感受到了美国独立战争时期的历史氛围。在旧城散步时发现的一些民居风格，也比我在多伦多看到的北美house要更具设计美感。城市里还有很多博物馆和艺术馆，比如费城艺术博物馆和罗丹博物馆，展出了很多丰富的艺术作品和雕塑，我还特意去了宾大博物馆，看到了在碑林博物馆遗失的另外两尊昭陵六骏的石刻。纽约的话，当然首先是不能错过的大都会博物馆和现代艺术博物馆，大都会MET连去了3天，结果回来发现依然没有看完所有想看的展品。纽约之行比较有意思的在于这次好多行程是利用gemini（特别是deep research）来帮忙规划的，感觉当我的需要比较明确地提出以后，规划得效果还不，比我两年前使用Chatgpt规划摩洛哥之行的时候有了非常大的提高。纽约作为全球文化中心，布鲁克林大桥的熙攘与百老汇的灯火终于让我有一种回到伦敦时候的文化体验。白天看展，晚上百老汇看剧，时代广场下的繁华和熙攘也让我体验到了纽约独特的城市氛围。</p>
+<div class="image-grid">
+  <img src="photos/travel/philadelphia/29941602-0151-48D2-94AD-0BB67305283B_1_105_c.jpeg" alt="Philadelphia Independence Hall area">
+  <img src="photos/travel/philadelphia/IMG_6665.jpeg" alt="Philadelphia old city street">
+  <img src="photos/travel/philadelphia/5CBAACD0-33F5-4295-BA7D-B39BE00AB07E_1_105_c.jpeg" alt="Philadelphia museum steps">
+  <img src="photos/travel/philadelphia/C1739149-5A43-434A-91B8-F45B1DF10069_1_102_o.jpeg" alt="Philadelphia historic architecture">
+  <img src="photos/travel/philadelphia/E5BF73CC-6D91-4090-A2F5-139814116AA0_1_105_c.jpeg" alt="Philadelphia winter street at dusk">
+  <img src="photos/travel/philadelphia/6218C964-9887-4037-9C0F-362F8DE58407_1_105_c.jpeg" alt="Philadelphia evening skyline">
+</div>
+<div class="image-caption">Philadelphia 二月：独立厅、博物馆与老城街景</div>
+
+<div class="image-grid">
+  <img src="photos/travel/nyc/IDG_20251220_161849_034.jpeg" alt="NYC Manhattan skyline afternoon">
+  <img src="photos/travel/nyc/IMG_6402.jpeg" alt="NYC Brooklyn Bridge night lights">
+  <img src="photos/travel/nyc/IMG_6505.jpeg" alt="NYC winter morning street">
+  <img src="photos/travel/nyc/IMG_6564.jpeg" alt="NYC Bryant Park冬日">
+  <img src="photos/travel/nyc/IMG_7029.jpeg" alt="NYC museum hall in December">
+  <img src="photos/travel/nyc/IMG_7116.jpeg" alt="NYC midtown afternoon">
+  <img src="photos/travel/nyc/IDG_20251224_192525_000.jpeg" alt="NYC holiday lights December 24">
+  <img src="photos/travel/nyc/IMG_7605.jpeg" alt="NYC Central Park dusk on Christmas Eve">
+  <img src="photos/travel/nyc/IMG_7742.jpeg" alt="NYC Times Square night near Christmas">
+  <img src="photos/travel/nyc/IMG_2048.jpeg" alt="NYC Central Park on Christmas Day">
+  <img src="photos/travel/nyc/IMG_8023.jpeg" alt="NYC Rockefeller Center rink evening">
+  <img src="photos/travel/nyc/IMG_8872.jpeg" alt="NYC December sunset skyline">
+</div>
+<div class="image-caption">纽约圣诞档：从布鲁克林桥到百老汇夜色</div>
+
 <p>总体来说，这次美国之行让我对美国的历史文化和城市风貌有了更深入的了解，如果下一站是传说中的“硅谷文化沙漠”，那里的生活又将呈现何种质感？</p>
         </article>
 
